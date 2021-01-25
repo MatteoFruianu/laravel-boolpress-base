@@ -18,3 +18,14 @@ use Illuminate\Support\Facades\Route;
 // HOME
 
 Route::get('/', 'StaticPageController@home' )->name('homepage');
+
+
+// ABOUT
+
+Route::get('/about', 'StaticPageController@about' )->name('about');
+
+
+// POST RESOURCE PAGE (CRUD)
+
+Route::resource('posts', 'PostController');
+
